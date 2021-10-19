@@ -7,28 +7,37 @@
     app:cardElevation="10dp"
     app:cardPreventCornerOverlap="true">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
         android:padding="10dp">
 
-        <ImageView
-            android:id="@+id/icon"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/barbarian" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="370dp"
+                android:layout_height="208dp"
+                android:layout_gravity="center|fill"
+                android:src="@drawable/barbarian" />
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/name_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/icon"
             android:layout_marginTop="5dp"
+            android:fontFamily="@font/spectral_medium"
             android:gravity="center"
             android:text="Diablo"
             android:textSize="20sp"
             android:textStyle="bold" />
 
-    </RelativeLayout>
+
+    </LinearLayout>
 </androidx.cardview.widget.CardView>

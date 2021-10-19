@@ -7,12 +7,12 @@
 
     <activity
         android:id="@+id/homeActivity"
-        android:name="com.mdapp.wallpapermdapp.HomeActivity"
+        android:name="com.mdapp.diablocharactermdapp.HomeActivity"
         android:label="activity_home"
         tools:layout="@layout/activity_home" />
     <fragment
         android:id="@+id/wallpaperFragment"
-        android:name="com.mdapp.wallpapermdapp.WallpaperFragment"
+        android:name="com.mdapp.diablocharactermdapp.WallpaperFragment"
         android:label="fragment_wallpaper"
         tools:layout="@layout/fragment_wallpaper" />
 </navigation>

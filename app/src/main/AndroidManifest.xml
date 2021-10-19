@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mdapp.wallpapermdapp">
+    package="com.mdapp.diablocharactermdapp">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
 
     <application
         android:allowBackup="true"
@@ -10,16 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WallpaperMDapp">
         <activity
-            android:name=".WallpaperHome"
+            android:name="com.mdapp.diablocharactermdapp.DialogActivity"
             android:exported="true" />
         <activity
-            android:name=".HomeActivity"
+            android:name="com.mdapp.diablocharactermdapp.WallpaperHome"
             android:exported="true" />
         <activity
-            android:name=".WallpaperActivity"
+            android:name="com.mdapp.diablocharactermdapp.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreen"
+            android:name="com.mdapp.diablocharactermdapp.WallpaperActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.mdapp.diablocharactermdapp.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

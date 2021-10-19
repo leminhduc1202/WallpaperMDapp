@@ -4,25 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WallpaperHome"
+    android:orientation="vertical"
     android:padding="10dp"
-    android:orientation="vertical">
+    tools:context=".WallpaperHome">
 
     <ImageView
         android:id="@+id/icon"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        />
-    <ScrollView
-        app:layout_constraintTop_toBottomOf="@id/icon"
+        android:layout_height="200dp" />
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@id/name_text_view"
-            android:text="Context"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D50000"
+            app:cardCornerRadius="10dp">
+
+            <VideoView
+                android:id="@+id/vd_character"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:layout_margin="3dp" />
+        </androidx.cardview.widget.CardView>
+
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </ScrollView>
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@id/name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/spectral_medium"
+                android:text="Context" />
+        </ScrollView>
+    </LinearLayout>
 
 
 </LinearLayout>
