@@ -3,4 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="main_name">Diablo Character \n MDapp</string>
+    <!--    admob id-->
+    <string name="admob_app_id">ca-app-pub-4477880561754258~3128074336</string>
+    <string name="admob_banner_id">ca-app-pub-4477880561754258/5534514317</string>
+    <string name="admob_banner_test_id">ca-app-pub-3940256099942544/6300978111</string>
+
 </resources>

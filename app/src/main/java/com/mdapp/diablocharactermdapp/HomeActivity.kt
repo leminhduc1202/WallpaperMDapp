@@ -7,6 +7,9 @@ import android.widget.AdapterView
 import android.widget.Button
 import android.widget.GridView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import com.mdapp.diablocharactermdapp.adapter.Adapter
 import com.mdapp.diablocharactermdapp.model.Items
 
@@ -16,10 +19,18 @@ class HomeActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
     private var gridView: GridView? = null
     private var adapter00: Adapter? = null
 
+    lateinit var mAdView: AdView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        MobileAds.initialize(this) {}
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
 
         gridView = findViewById(R.id.gv_body)
         arrayList = ArrayList()
