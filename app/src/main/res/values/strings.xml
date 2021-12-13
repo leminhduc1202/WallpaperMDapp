@@ -7,5 +7,7 @@
     <string name="admob_app_id">ca-app-pub-4477880561754258~3128074336</string>
     <string name="admob_banner_id">ca-app-pub-4477880561754258/5534514317</string>
     <string name="admob_banner_test_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_bannerid">ca-app-pub-4477880561754258/1941850673</string>
+
 
 </resources>

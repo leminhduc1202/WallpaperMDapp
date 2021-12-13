@@ -2,14 +2,13 @@ package com.mdapp.diablocharactermdapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.Button
 import android.widget.GridView
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.*
 import com.mdapp.diablocharactermdapp.adapter.Adapter
 import com.mdapp.diablocharactermdapp.model.Items
 
@@ -31,6 +30,35 @@ class HomeActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
+
+        mAdView.adListener = object: AdListener() {
+            override fun onAdLoaded() {
+                // Code to be executed when an ad finishes loading.
+                Log.d("====", "onAdLoaded")
+            }
+
+            override fun onAdFailedToLoad(adError : LoadAdError) {
+                // Code to be executed when an ad request fails.
+                Log.d("====", adError.message)
+            }
+
+            override fun onAdOpened() {
+                // Code to be executed when an ad opens an overlay that
+                // covers the screen.
+                Log.d("====", "onAdOpened")
+            }
+
+            override fun onAdClicked() {
+                // Code to be executed when the user clicks on an ad.
+                Log.d("====", "onAdClicked")
+            }
+
+            override fun onAdClosed() {
+                // Code to be executed when the user is about to return
+                // to the app after tapping on an ad.
+                Log.d("====", "onAdClosed")
+            }
+        }
 
         gridView = findViewById(R.id.gv_body)
         arrayList = ArrayList()

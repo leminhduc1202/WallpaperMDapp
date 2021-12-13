@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Project/Persional Project/WallpaperMDapp/app/src/main/res/drawable/ic_group_2626.xml" value="0.4041666666666667" />
         <entry key="..\:/Android Project/Persional Project/WallpaperMDapp/app/src/main/res/drawable/ic_logo.xml" value="0.25" />
         <entry key="..\:/Android Project/Persional Project/WallpaperMDapp/app/src/main/res/drawable/top_background.xml" value="0.21666666666666667" />
-        <entry key="..\:/Android Project/Persional Project/WallpaperMDapp/app/src/main/res/layout/activity_dialog.xml" value="0.25" />
+        <entry key="..\:/Android Project/Persional Project/WallpaperMDapp/app/src/main/res/layout/activity_dialog.xml" value="0.2" />
         <entry key="..\:/Android Project/Persional Project/WallpaperMDapp/app/src/main/res/layout/activity_home.xml" value="0.18" />
         <entry key="..\:/Android Project/Persional Project/WallpaperMDapp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android Project/Persional Project/WallpaperMDapp/app/src/main/res/layout/activity_splash_screen.xml" value="0.20052083333333334" />
